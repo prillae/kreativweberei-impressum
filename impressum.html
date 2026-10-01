@@ -1,133 +1,53 @@
 <!doctype html>
 <html lang="de">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Impressum von kreativweberei">
   <title>Impressum | kreativweberei</title>
-  <meta name="description" content="Impressum von kreativweberei" />
-  <style>
-    :root {
-      --bg: #f5f3ef;
-      --card: #ffffff;
-      --text: #202020;
-      --muted: #5a5a5a;
-      --accent: #7a4b2f;
-      --border: #e6dfd6;
-    }
-
-    * {
-      box-sizing: border-box;
-    }
-
-    body {
-      margin: 0;
-      min-height: 100vh;
-      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-      color: var(--text);
-      background:
-        radial-gradient(circle at 15% 10%, #fff8f1 0%, rgba(255, 248, 241, 0) 40%),
-        radial-gradient(circle at 85% 90%, #efe4d8 0%, rgba(239, 228, 216, 0) 35%),
-        var(--bg);
-      display: grid;
-      place-items: center;
-      padding: 24px;
-    }
-
-    main {
-      width: 100%;
-      max-width: 680px;
-      background: var(--card);
-      border: 1px solid var(--border);
-      border-radius: 18px;
-      padding: 28px;
-      box-shadow: 0 10px 35px rgba(0, 0, 0, 0.08);
-    }
-
-    h1 {
-      margin: 0 0 16px;
-      font-size: clamp(1.4rem, 3vw, 1.9rem);
-      letter-spacing: 0.02em;
-      color: var(--accent);
-    }
-
-    .logo {
-      display: block;
-      width: min(100%, 420px);
-      height: auto;
-      margin: 0 0 18px;
-    }
-
-    p {
-      margin: 0;
-      line-height: 1.6;
-      font-size: 1rem;
-    }
-
-    .block {
-      margin-top: 14px;
-    }
-
-    .label {
-      display: block;
-      margin-bottom: 4px;
-      font-size: 0.9rem;
-      color: var(--muted);
-    }
-
-    a {
-      color: var(--accent);
-      text-decoration: none;
-      border-bottom: 1px solid transparent;
-      transition: border-color 0.2s ease;
-    }
-
-    a:hover,
-    a:focus-visible {
-      border-color: var(--accent);
-      outline: none;
-    }
-
-    footer {
-      margin-top: 20px;
-      padding-top: 14px;
-      border-top: 1px solid var(--border);
-      color: var(--muted);
-      font-size: 0.9rem;
-    }
-
-    @media (max-width: 460px) {
-      main {
-        padding: 22px;
-        border-radius: 14px;
-      }
-    }
-  </style>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <main>
-    <img class="logo" src="logo-kreativweberei.png" alt="Logo kreativweberei" />
+  <a class="skip-link" href="#inhalt">Zum Inhalt springen</a>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html#start" aria-label="kreativweberei – zur Startseite">
+        <img src="assets/img/logo.png" alt="kreativweberei" width="190" height="190">
+      </a>
+      <nav aria-label="Seitennavigation">
+        <a href="index.html">Zur Website</a>
+        <a href="datenschutz.html">Datenschutz</a>
+      </nav>
+    </div>
+  </header>
+  <main id="inhalt" class="container legal-document">
+    <p class="eyebrow">Rechtliches</p>
     <h1>Impressum</h1>
 
-    <p>kreativweberei<br />
-      Jonathan Frank<br />
-      Weststr. 3<br />
+    <p>kreativweberei<br>
+      Jonathan Frank<br>
+      Weststr. 3<br>
       08491 Netzschkau
     </p>
 
-    <p class="block">
-      <span class="label">Kontakt</span>
-      <a href="mailto:info@kreativweberei.de">info@kreativweberei.de</a><br />
+    <h2>Kontakt</h2>
+    <p><a href="mailto:info@kreativweberei.de">info@kreativweberei.de</a><br>
       <a href="tel:+4915123600816">Tel. 015123600816</a>
     </p>
 
-    <p class="block">
-      <span class="label">Steuernummer</span>
-      223/220/03807
-    </p>
+    <h2>Steuernummer</h2>
+    <p>223/220/03807</p>
 
-    <footer>
-      Stand: April 2026
-    </footer>
+    <p><strong>Stand: April 2026</strong></p>
   </main>
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <span>kreativweberei – Grafik, Print, Lasercut und -gravur</span>
+      <nav aria-label="Footer-Navigation">
+        <a href="index.html">Zur Website</a>
+        <a href="datenschutz.html">Datenschutz</a>
+      </nav>
+    </div>
+  </footer>
 </body>
 </html>
