@@ -1,133 +1,209 @@
 <!doctype html>
 <html lang="de">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Impressum | kreativweberei</title>
-  <meta name="description" content="Impressum von kreativweberei" />
-  <style>
-    :root {
-      --bg: #f5f3ef;
-      --card: #ffffff;
-      --text: #202020;
-      --muted: #5a5a5a;
-      --accent: #7a4b2f;
-      --border: #e6dfd6;
-    }
-
-    * {
-      box-sizing: border-box;
-    }
-
-    body {
-      margin: 0;
-      min-height: 100vh;
-      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-      color: var(--text);
-      background:
-        radial-gradient(circle at 15% 10%, #fff8f1 0%, rgba(255, 248, 241, 0) 40%),
-        radial-gradient(circle at 85% 90%, #efe4d8 0%, rgba(239, 228, 216, 0) 35%),
-        var(--bg);
-      display: grid;
-      place-items: center;
-      padding: 24px;
-    }
-
-    main {
-      width: 100%;
-      max-width: 680px;
-      background: var(--card);
-      border: 1px solid var(--border);
-      border-radius: 18px;
-      padding: 28px;
-      box-shadow: 0 10px 35px rgba(0, 0, 0, 0.08);
-    }
-
-    h1 {
-      margin: 0 0 16px;
-      font-size: clamp(1.4rem, 3vw, 1.9rem);
-      letter-spacing: 0.02em;
-      color: var(--accent);
-    }
-
-    .logo {
-      display: block;
-      width: min(100%, 420px);
-      height: auto;
-      margin: 0 0 18px;
-    }
-
-    p {
-      margin: 0;
-      line-height: 1.6;
-      font-size: 1rem;
-    }
-
-    .block {
-      margin-top: 14px;
-    }
-
-    .label {
-      display: block;
-      margin-bottom: 4px;
-      font-size: 0.9rem;
-      color: var(--muted);
-    }
-
-    a {
-      color: var(--accent);
-      text-decoration: none;
-      border-bottom: 1px solid transparent;
-      transition: border-color 0.2s ease;
-    }
-
-    a:hover,
-    a:focus-visible {
-      border-color: var(--accent);
-      outline: none;
-    }
-
-    footer {
-      margin-top: 20px;
-      padding-top: 14px;
-      border-top: 1px solid var(--border);
-      color: var(--muted);
-      font-size: 0.9rem;
-    }
-
-    @media (max-width: 460px) {
-      main {
-        padding: 22px;
-        border-radius: 14px;
-      }
-    }
-  </style>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Individuelle Gestaltung, personalisierte Geschenke, Holzarbeiten, Lasercut, Lasergravur, Print, Textildruck und Eventkonzepte von kreativweberei.">
+  <title>kreativweberei | Individuelle Gestaltung, Geschenke und Eventideen</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <main>
-    <img class="logo" src="logo-kreativweberei.png" alt="Logo kreativweberei" />
-    <h1>Impressum</h1>
+  <a class="skip-link" href="#inhalt">Zum Inhalt springen</a>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="#start" aria-label="kreativweberei – zum Anfang">
+        <img src="assets/img/logo.png" alt="kreativweberei" width="190" height="190">
+      </a>
+      <nav aria-label="Hauptnavigation">
+        <a href="#bereiche">Arbeiten</a>
+        <a href="#kontakt">Kontakt</a>
+        <a href="https://www.instagram.com/kreativweberei/">Instagram <span aria-hidden="true">↗</span></a>
+      </nav>
+    </div>
+  </header>
 
-    <p>kreativweberei<br />
-      Jonathan Frank<br />
-      Weststr. 3<br />
-      08491 Netzschkau
-    </p>
+  <main id="inhalt">
+    <section class="hero" id="start" aria-labelledby="hero-title">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow">Kreativ gedacht. Persönlich gemacht.</p>
+          <h1 id="hero-title">Auf der Suche nach <em>Einzigartigkeit</em></h1>
+          <p>Ein ganz persönliches Geschenk, Events mit einem stimmigen Design wie aus einem Guss, hochwertige Botschafter für deine Marke: Wir gestalten Hingucker mit Charakter – exklusiv, stilvoll und auf Wunsch individuell personalisiert. Du hast eine Idee? Wir setzen sie gemeinsam um. Du suchst eine ganz spezielle Lösung? Lass sie uns zusammen entwickeln!</p>
+          <div class="actions">
+            <a class="button" href="mailto:info@kreativweberei.de">Idee per E-Mail besprechen <span aria-hidden="true">↗</span></a>
+            <a class="text-link" href="#bereiche">Arbeiten entdecken <span aria-hidden="true">↓</span></a>
+          </div>
+        </div>
+        <figure class="hero-image">
+          <img src="assets/img/windlicht.webp" alt="Windlicht aus Furnier mit ausgeschnittenen gotischen Fenstern" width="900" height="675" fetchpriority="high">
+          <figcaption>Ideen, die ins Auge fallen.</figcaption>
+        </figure>
+      </div>
+    </section>
 
-    <p class="block">
-      <span class="label">Kontakt</span>
-      <a href="mailto:info@kreativweberei.de">info@kreativweberei.de</a><br />
-      <a href="tel:+4915123600816">Tel. 015123600816</a>
-    </p>
+    <section class="overview section" id="bereiche" aria-labelledby="bereiche-title">
+      <div class="container">
+        <p class="eyebrow">Unsere Arbeiten</p>
+        <h2 id="bereiche-title">Vom Gedanken zum besonderen Extra</h2>
+        <p class="section-intro">Unsere Stärke sind nicht beliebige Massenartikel. Unsere Stärke sind individuelle Einzelstücke und exklusive Kleinserien. Und wir lieben es, Ideen Wirklichkeit werden zu lassen.</p>
+        <nav class="area-nav" aria-label="Leistungsbereiche">
+          <a href="#grafik-design"><span>01</span> Grafik/Design <span aria-hidden="true">↗</span></a>
+          <a href="#personalisierte-geschenke"><span>02</span> Personalisierte Geschenke <span aria-hidden="true">↗</span></a>
+          <a href="#holz"><span>03</span> Besonderes aus Holz <span aria-hidden="true">↗</span></a>
+          <a href="#lasercut-lasergravur"><span>04</span> Lasercut und Lasergravur <span aria-hidden="true">↗</span></a>
+          <a href="#print"><span>05</span> Print <span aria-hidden="true">↗</span></a>
+          <a href="#textildruck"><span>06</span> Textildruck <span aria-hidden="true">↗</span></a>
+          <a href="#event"><span>07</span> Ganzheitliche Konzepte für dein Event <span aria-hidden="true">↗</span></a>
+        </nav>
+      </div>
+    </section>
 
-    <p class="block">
-      <span class="label">Steuernummer</span>
-      223/220/03807
-    </p>
+    <section class="work section" id="grafik-design" aria-labelledby="grafik-title">
+      <div class="container">
+        <div class="work-heading"><p class="eyebrow">01 / Gestaltung</p><h2 id="grafik-title">Grafik/Design</h2>
+          <p>Ein stimmiger Auftritt macht deine Idee sichtbar. Wir entwerfen Logos, Flyer, Broschüren und alles, was später in unseren Lasern und Druckern zu deinem Produkt wird. Genau so, wie es zu dir, zum Anlass und zum Einsatz passt.</p></div>
+        <div class="gallery-carousel">
+          <div class="gallery" role="region" aria-label="Beispiele für Grafik und Design" tabindex="0">
+            <figure><img src="assets/img/logodesign.webp" alt="Beispiel für ein gestaltetes Logo" width="800" height="600" loading="lazy"><figcaption>Logodesign</figcaption></figure>
+            <figure><img src="assets/img/flaschenbanderole.webp" alt="Gestaltete Flaschenbanderole mit Hochzeitslogo" width="800" height="600" loading="lazy"><figcaption>Gestaltung für besondere Anlässe</figcaption></figure>
+            <figure class="portrait"><img src="assets/img/sichtlagerkaesten.webp" alt="Maßgefertigte Sichtlagerkästen und Regalboxen aus Holz" width="900" height="1200" loading="lazy"><figcaption>maßgefertigte Speziallösungen</figcaption></figure>
+            <figure><img src="assets/img/gitarrenplektren.webp" alt="Individuelles Geschenk aus Holz, Filz und Gitarrenplektren" width="1200" height="900" loading="lazy"><figcaption>Individuell gestaltete Geschenkidee</figcaption></figure>
+          </div>
+        </div>
+      </div>
+    </section>
 
-    <footer>
-      Stand: April 2026
-    </footer>
+    <section class="work section tinted" id="personalisierte-geschenke" aria-labelledby="geschenke-title">
+      <div class="container">
+        <div class="work-heading"><p class="eyebrow">02 / Persönlich</p><h2 id="geschenke-title">Personalisierte Geschenke</h2>
+          <p>Jeder hört seinen eigenen Namen gern. Lass dich überzeugen, welche Freude ein Kugelschreiber, eine Tasse, eine Laterne oder ein Taschenmesser mit individueller Gravur bereiten.</p></div>
+        <div class="gallery-carousel">
+          <div class="gallery" role="region" aria-label="Beispiele für personalisierte Geschenke" tabindex="0">
+            <figure class="portrait"><img src="assets/img/taschenmesser.webp" alt="Personalisiertes Taschenmesser mit Gravur" width="1200" height="667" loading="lazy"><figcaption>Ein Geschenk mit Persönlichkeit</figcaption></figure>
+            <figure class="portrait"><img src="assets/img/giesskanne.webp" alt="Gießkanne mit individueller Gravur" width="1200" height="839" loading="lazy"><figcaption>Gravierte Gießkanne</figcaption></figure>
+            <figure class="portrait"><img src="assets/img/namensbuchstabe.webp" alt="Personalisierter Namensbuchstabe aus Holz" width="1200" height="1098" loading="lazy"><figcaption>Persönlich bis ins Detail</figcaption></figure>
+            <figure><img src="assets/img/filz-1.webp" alt="Erster Arbeitsschritt bei der Fertigung eines Filzanhängers" width="800" height="600" loading="lazy"><figcaption>Ein Anhänger entsteht</figcaption></figure>
+            <figure><img src="assets/img/filz-2.webp" alt="Weiterer Arbeitsschritt bei der Fertigung eines Filzanhängers" width="800" height="600" loading="lazy"><figcaption>Mit Liebe zum Detail</figcaption></figure>
+            <figure><img src="assets/img/filz-3.webp" alt="Filzanhänger im Fertigungsprozess" width="800" height="600" loading="lazy"><figcaption>Das fertige Einzelstück</figcaption></figure>
+            <figure><img src="assets/img/brotbuechsen.webp" alt="Personalisierte Brotbüchsen und Trinkflaschen aus Edelstahl" width="800" height="600" loading="lazy"><figcaption>Persönliche Begleiter</figcaption></figure>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="work section" id="holz" aria-labelledby="holz-title">
+      <div class="container">
+        <div class="work-heading"><p class="eyebrow">03 / Natürlich</p><h2 id="holz-title">Besonderes aus Holz</h2>
+          <p>Du liebst den besonderen Charakter und die natürliche Schönheit von Holz genauso wie wir? Vom zarten Furnier bis zur dicken Bohle verwandeln wir alles in echte Hingucker.</p></div>
+        <div class="gallery-carousel">
+          <div class="gallery" role="region" aria-label="Beispiele für individuelle Holzarbeiten" tabindex="0">
+            <figure><img src="assets/img/baumscheibe.webp" alt="Baumscheibe mit floraler Gravur" width="800" height="600" loading="lazy"><figcaption>Einzigartig wie das Material</figcaption></figure>
+            <figure class="portrait"><img src="assets/img/stele.webp" alt="Individuell gestaltete Stele aus Holz" width="900" height="1200" loading="lazy"><figcaption>Holz in besonderer Form</figcaption></figure>
+            <figure><img src="assets/img/fotobox.webp" alt="Individuell gefertigte Fotobox aus Holz" width="800" height="600" loading="lazy"><figcaption>Fotobox aus Holz</figcaption></figure>
+            <figure><img src="assets/img/blumenstecker.webp" alt="Dekorativer Blumenstecker aus Holz" width="800" height="600" loading="lazy"><figcaption>Blumenstecker aus Holz</figcaption></figure>
+            <figure><img src="assets/img/windlicht.webp" alt="Windlicht aus Furnier mit ausgeschnittenen gotischen Fenstern" width="800" height="600" loading="lazy"><figcaption>Feine Lasercut-Arbeit in Furnier</figcaption></figure>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="work section tinted" id="lasercut-lasergravur" aria-labelledby="laser-title">
+      <div class="container">
+        <div class="work-heading"><p class="eyebrow">04 / Präzision</p><h2 id="laser-title">Lasercut und Lasergravur</h2>
+          <p>Wenn der Laserstrahl feinste Strukturen ins Material brennt, erlebt man wie sich Kreativität und Präzision vereinen. Von Karton, über Filz, Acrylglas bis hin zu Edelstahl: fast auf jedem Material lassen sich beeindruckende Details verewigen.</p></div>
+        <div class="gallery-carousel">
+          <div class="gallery" role="region" aria-label="Beispiele für Lasercut und Lasergravur" tabindex="0">
+            <figure><img src="assets/img/laser.webp" alt="Laser während der Bearbeitung eines Werkstücks" width="800" height="600" loading="lazy"><figcaption>Laser in Betrieb</figcaption></figure>
+            <figure><img src="assets/img/medaille.webp" alt="Individuell gefertigte Medaille" width="800" height="600" loading="lazy"><figcaption>Details mit Wirkung</figcaption></figure>
+            <figure><img src="assets/img/zollstock.webp" alt="Gravierte Zollstöcke" width="800" height="600" loading="lazy"><figcaption>Gravur für jeden Anlass</figcaption></figure>
+            <figure><img src="assets/img/laserprozess.webp" alt="Lasergravur während des Fertigungsprozesses" width="800" height="600" loading="lazy"><figcaption>Einblick in den Fertigungsprozess</figcaption></figure>
+            <figure><img src="assets/img/accessoires-muttertag.webp" alt="Individuelle Accessoires zum Muttertag" width="800" height="600" loading="lazy"><figcaption>Besondere Accessoires</figcaption></figure>
+            <figure><img src="assets/img/isolierkanne.webp" alt="Individuell gestaltete Isolierkanne" width="800" height="600" loading="lazy"><figcaption>Gravur auf einer Isolierkanne</figcaption></figure>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="work section" id="print" aria-labelledby="print-title">
+      <div class="container">
+        <div class="work-heading"><p class="eyebrow">05 / Gedruckt</p><h2 id="print-title">Print</h2>
+          <p>Auf Glas, Holz, Kerzen, Transparentpapier drucken – das geht. Weiß auf dunklen Karton drucken – auch das geht. Drucken und Laserschneiden verbinden – das wird phänomenal. In unserer Werkstatt fertigen wir einzigartige Karten für jeden Anlass, Accessoires für dein Event oder sogar maßgefertigte Schachteln.</p></div>
+        <div class="gallery-carousel">
+          <div class="gallery" role="region" aria-label="Beispiele für Print" tabindex="0">
+            <figure><img src="assets/img/schachtel.webp" alt="Kleinserie individuell gestalteter Schachteln für Sektgläser" width="800" height="600" loading="lazy"><figcaption>Maßgefertigte Schachteln</figcaption></figure>
+            <figure><img src="assets/img/nassschiebefolie-restauration.webp" alt="Nassschiebefolie als Einzelstück für eine Restauration" width="800" height="600" loading="lazy"><figcaption>Nassschiebefolie für Restauration</figcaption></figure>
+            <figure class="portrait"><img src="assets/img/nassschiebefolie-taufkerze.webp" alt="Nassschiebefolie zur Gestaltung einer Taufkerze" width="900" height="1200" loading="lazy"><figcaption>Nassschiebefolie für eine Taufkerze</figcaption></figure>
+            <figure class="portrait"><img src="assets/img/laterne.webp" alt="Freigestellte Laterne mit Gravur und Fotodruck auf Glas" width="676" height="1200" loading="lazy"><figcaption>Laterne mit Gravur und Fotodruck</figcaption></figure>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="work section tinted" id="textildruck" aria-labelledby="textil-title">
+      <div class="container">
+        <div class="work-heading"><p class="eyebrow">06 / Auf Stoff</p><h2 id="textil-title">Textildruck</h2>
+          <p>Ein individuelles Motiv auf Stoff macht ein Stück zum persönlichen Begleiter oder Teil eines gemeinsamen Auftritts. Mit Folienplot, Tonertransfer und Siebdruck bieten wir passende Lösungen vom Einzelstück bis zur Serienproduktion.</p></div>
+        <div class="gallery-carousel">
+          <div class="gallery" role="region" aria-label="Beispiele für Textildruck" tabindex="0">
+            <figure><img src="assets/img/textil-1.webp" alt="Beispiel für individuellen Textildruck" width="800" height="600" loading="lazy"><figcaption>Individuelle Motive</figcaption></figure>
+            <figure><img src="assets/img/textil-2.webp" alt="Weiteres Beispiel für bedruckte Textilien" width="800" height="600" loading="lazy"><figcaption>Textildruck nach deiner Idee</figcaption></figure>
+            <figure><img src="assets/img/textil-3.webp" alt="Bedrucktes Textil als Teil eines gemeinsamen Auftritts" width="800" height="600" loading="lazy"><figcaption>Gemeinsam sichtbar</figcaption></figure>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="work section" id="event" aria-labelledby="event-title">
+      <div class="container">
+        <div class="work-heading"><p class="eyebrow">07 / Alles im Einklang</p><h2 id="event-title">Ganzheitliche Konzepte für dein Event</h2>
+          <p>Du liebst es, wenn sich jedes Detail zu einem stimmigen Ganzen zusammenfügt? Wenn alles wie aus einem Guss wirkt? Wenn sich der sprichwörtliche rote Faden durch jedes Element zieht? Wir gießen Ideen in Gesamtkonzepte und spinnen rote Fäden. Schriftarten, Farben, Motive, Materialien – harmonisch kombiniert statt wild gewürfelt.</p></div>
+        <div class="gallery-carousel">
+          <div class="gallery event-gallery" role="region" aria-label="Beispiele für ganzheitliche Eventkonzepte" tabindex="0">
+            <figure><img src="assets/img/event-business.webp" alt="Abgestimmtes Set gebrandeter Produkte für eine Veranstaltung" width="800" height="600" loading="lazy"><figcaption>Für deinen Markenauftritt</figcaption></figure>
+            <div class="event-group">
+            <figure><img src="assets/img/ringkissen.webp" alt="Baumscheibe als Ringkissen für eine Hochzeit" width="800" height="600" loading="lazy"><figcaption>Für persönliche Feiern</figcaption></figure>
+            <figure class="portrait"><img src="assets/img/name-serviettenbanderole.webp" alt="Tischdekoration mit Namensschriftzug und bedruckter Serviettenbanderole" width="675" height="1200" loading="lazy"><figcaption>Stimmige Details</figcaption></figure>
+            <figure class="portrait"><img src="assets/img/stelen-lasercut.webp" alt="Zwei gravierte Holzstelen mit Lasercut für eine Hochzeit" width="900" height="1200" loading="lazy"><figcaption>Ein Konzept aus einem Guss</figcaption></figure>
+            </div>
+            <figure><img src="assets/img/sektglas.webp" alt="Sektglas mit Gravur als Gastgeschenk" width="800" height="600" loading="lazy"><figcaption>Gastgeschenke mit persönlicher Note</figcaption></figure>
+            <figure><img src="assets/img/tortentopper.webp" alt="Individueller Tortentopper für eine Feier" width="800" height="600" loading="lazy"><figcaption>Der besondere Blickfang</figcaption></figure>
+            <figure><img src="assets/img/hochzeitsschild.webp" alt="Individuelles Schild für eine Hochzeit" width="800" height="600" loading="lazy"><figcaption>Ein Willkommensgruß nach Maß</figcaption></figure>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="instagram section" id="instagram" aria-labelledby="instagram-title">
+      <div class="container instagram-inner">
+        <div>
+          <p class="eyebrow">Einblicke aus der Werkstatt</p>
+          <h2 id="instagram-title">Entdecke mehr auf Instagram</h2>
+          <p>Folge uns für Einblicke in unsere Arbeit, die neuesten Projekte und immer neue Ideen.</p>
+        </div>
+        <a class="button button-light" href="https://www.instagram.com/kreativweberei/">kreativweberei auf Instagram besuchen <span aria-hidden="true">↗</span></a>
+      </div>
+    </section>
+
+    <section class="contact section" id="kontakt" aria-labelledby="kontakt-title">
+      <div class="container contact-inner">
+        <p class="eyebrow">Lass uns sprechen</p>
+        <h2 id="kontakt-title">Kreativität lebt vom persönlichen Kontakt.</h2>
+        <p>Du vermisst einen Katalog oder eine Preisliste? Deine Idee passt doch in keinen Katalog. Schreib uns und wir finden gemeinsam genau die Lösung, die zu dir passt. Und: Nein, individuell muss nicht teuer sein.</p>
+        <p><a href="mailto:info@kreativweberei.de">info@kreativweberei.de</a></p>
+        <a class="button button-light" href="mailto:info@kreativweberei.de">E-Mail an kreativweberei schreiben <span aria-hidden="true">↗</span></a>
+      </div>
+    </section>
   </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <span>kreativweberei – Grafik, Print, Lasercut und -gravur</span>
+      <nav aria-label="Footer-Navigation">
+        <a href="https://www.instagram.com/kreativweberei/">Mehr Einblicke auf Instagram <span aria-hidden="true">↗</span></a>
+        <a href="impressum.html">Impressum</a>
+        <a href="datenschutz.html">Datenschutz</a>
+      </nav>
+    </div>
+  </footer>
 </body>
 </html>
